@@ -3,7 +3,7 @@ This is a Godot Editor addon (plugin) that allows you to communicate with the As
 
 ![image](addons/Godot_Assistant_API_Integration/assets/images/addon_preview.png)
 
-If you find this addon helpful, please consider supporting it with a [donation](https://ko-fi.com/amosfan).
+If you find this addon helpful, please consider supporting me with a [donation](https://ko-fi.com/amosfan).
 [![Alt text](addons/Godot_Assistant_API_Integration/assets/images/kofi_button_blue.webp)](https://ko-fi.com/amosfan)
 
 

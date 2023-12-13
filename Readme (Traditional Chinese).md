@@ -80,6 +80,10 @@
    A:在 Godot_Assistant_API_Integration.gd 中找到各按鈕的預設 prompt，
    修改後儲存並重新啟用 plugin 即可。  
 
+3. Q: 如何更換 Assistant?
+   A: 將位於 Godot_Assistant_API_Integration 資料夾內的檔案 "Assistant_ID.txt" 刪除。。
+      重新啟用本 plugin。
+      再輸入新的 Assistant ID 即可。
 
 ## 鳴謝
 - 此專案最初受 FinePointCGI 啟發. 你可以在 [這裡](https://www.youtube.com/watch?v=s0ETqU1YbLg) 找到他的教學影片.

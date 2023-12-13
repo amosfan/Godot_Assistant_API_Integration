@@ -116,7 +116,7 @@ func _show_addon_startup():
 	#print("---------------")
 
 func _prepate_addon_startup_buttons():
-	print("is_API_Key_ready:"+str(is_API_Key_ready))
+	#print("is_API_Key_ready:"+str(is_API_Key_ready))
 	assistant_id_leneEdit=addon_startup_instance.get_node("MarginContainer/VBoxContainer/assistant_id")
 	(assistant_id_leneEdit as LineEdit).text_changed.connect(_on_assistant_id_leneEdit_text_changed)
 	request1=addon_startup_instance.get_node("MarginContainer/VBoxContainer/request1")

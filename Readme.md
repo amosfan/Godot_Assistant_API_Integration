@@ -72,5 +72,8 @@ If you find this addon helpful, please consider supporting it with a [donation](
    A: Find the default prompts of each button in Godot_Assistant_API_Integration.gd,
    Modify, save, and then reactivate the plugin.
 
+3. Q: How to change Assistant?
+   A: Delete the file "Assistant_ID.txt" within Godot_Assistant_API_Integration folder.
+      Reactivate the plugin then enter a new Assistant ID.
 ## Credits
 - This project is inspired by FinePointCGI. You can check his tutorial [here](https://www.youtube.com/watch?v=s0ETqU1YbLg).

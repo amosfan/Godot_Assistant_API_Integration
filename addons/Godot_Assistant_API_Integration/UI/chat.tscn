@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://bkh6fljewyvau"]
+
+[node name="Chat" type="Control"]
+custom_minimum_size = Vector2(288, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox1" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBox1"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 23
+theme_override_font_sizes/mono_font_size = 18
+scroll_following = true
+selection_enabled = true
+
+[node name="VBox2" type="VBoxContainer" parent="VBox1"]
+custom_minimum_size = Vector2(0, 175)
+layout_mode = 2
+size_flags_stretch_ratio = 28.0
+
+[node name="HBox1" type="HBoxContainer" parent="VBox1/VBox2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 25.0
+alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="VBox1/VBox2/HBox1"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 25.0
+text = "hi"
+wrap_mode = 1
+
+[node name="Ask" type="Button" parent="VBox1/VBox2/HBox1"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.0
+text = "Ask"
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBox1/VBox2"]
+layout_mode = 2
+
+[node name="HBox2" type="HBoxContainer" parent="VBox1/VBox2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 12.0
+
+[node name="Summary" type="Button" parent="VBox1/VBox2/HBox2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Summary"
+
+[node name="Action" type="Button" parent="VBox1/VBox2/HBox2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Action"
+
+[node name="Help" type="Button" parent="VBox1/VBox2/HBox2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Help"
+
+[node name="Clear" type="Button" parent="VBox1/VBox2/HBox2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Clear"

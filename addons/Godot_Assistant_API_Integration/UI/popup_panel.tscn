@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc1itdwy6fupj"]
+
+[ext_resource type="Script" path="res://addons/Godot_Assistant_API_Integration/scripts/Popup_Panel.gd" id="1_3frec"]
+
+[node name="PopupPanel" type="PopupPanel"]
+initial_position = 4
+size = Vector2i(325, 160)
+visible = true
+extend_to_title = true
+min_size = Vector2i(325, 160)
+script = ExtResource("1_3frec")
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 321.0
+offset_bottom = 156.0
+theme_override_font_sizes/font_size = 25
+text = "Please select code first!"
+horizontal_alignment = 1
+vertical_alignment = 1

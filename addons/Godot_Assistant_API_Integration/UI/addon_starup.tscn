@@ -1,0 +1,86 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm83ehvwbgegk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5erw8"]
+bg_color = Color(0.0627451, 0.0705882, 0.0862745, 1)
+
+[node name="Addon_starup" type="PanelContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -185.0
+offset_right = 245.0
+offset_bottom = 185.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(225, 170)
+theme_override_styles/panel = SubResource("StyleBoxFlat_5erw8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="instruction" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Instruction:
+"
+
+[node name="request1" type="Label" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "
+-Please save the API KEY in the Windows system environment variables, assigning it the variable name OPENAI_API_KEY.
+ (Note: A system reboot is necessary for the changes to take effect.)
+
+"
+autowrap_mode = 3
+
+[node name="request2" type="Label" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "- Paste your Assistant ID here."
+autowrap_mode = 3
+
+[node name="assistant_id" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+placeholder_text = "asst_OOOOOOOOOOOOOOOOOOOOOOOO"
+
+[node name="warning_label" type="Label" parent="MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.854902, 0, 0, 1)
+text = "Assistant id format is incorrect!"
+
+[node name="Spacing" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="DoneBtn" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+disabled = true
+text = "Done"
+
+[node name="CancelBtn" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+text = "Cancel"

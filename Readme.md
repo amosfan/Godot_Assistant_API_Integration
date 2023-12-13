@@ -3,7 +3,7 @@ This is a Godot Editor addon (plugin) that allows you to communicate with the As
 
 ![image](addons/Godot_Assistant_API_Integration/assets/images/addon_preview.png)
 
-If you find this addon helpful, please consider supporting it with a [donation](https://ko-fi.com/amosfan).
+If you find this addon helpful, please consider supporting me with a [donation](https://ko-fi.com/amosfan).
 [![Alt text](addons/Godot_Assistant_API_Integration/assets/images/kofi_button_blue.webp)](https://ko-fi.com/amosfan)
 
 
@@ -16,7 +16,8 @@ If you find this addon helpful, please consider supporting it with a [donation](
 2. Summary: Summarize selected code.
 3. Action: Transform selected comments into functions.
 4. Help: Assist in debugging selected code.
-5. Clear: Clear the conversation area and switch Thread. Since the Assistant counts all questions and answers in the same Thread, this feature can manage token usage.
+5. Clear: Clear the conversation area and switch Thread. 
+   Since the Assistant counts all questions and answers in the same Thread, this feature can manage token usage.
 
 ## System Requirements
 1. Use Windows OS (other OSs not tested).
@@ -29,7 +30,8 @@ If you find this addon helpful, please consider supporting it with a [donation](
 2. [Obtain an OpenAI KEY](https://platform.openai.com/api-keys)
    Get the OpenAI KEY from the OpenAI platform. You can apply for it for free after logging in.
 
-3. Store the API Key as a Windows environment variable "OPENAI_API_KEY". Ensure the variable name is exactly the same, otherwise the addon will not be able to find the API Key.
+3. Store the API Key as a Windows environment variable "OPENAI_API_KEY". 
+   Ensure the variable name is exactly the same, otherwise the addon will not be able to find the API Key.
 
 4. Download this repository and copy the "addon" folder to the project root directory,
    Refer to the following illustration:
@@ -49,13 +51,16 @@ If you find this addon helpful, please consider supporting it with a [donation](
 1. Since Godot lacks a built-in Markdown renderer, the presentation of code blocks and Markdown syntax is less appealing.
 
 2. After this plugin was completed, we discovered that Github Copilot has more powerful features.
-   However, since GDScript is relatively niche, whether using Copilot or Assistant, responses often include inaccuracies, such as mentioning non-existent or outdated Classes, Functions, etc.
+   However, since GDScript is relatively niche, whether using Copilot or Assistant, 
+   responses often include inaccuracies, such as mentioning non-existent or outdated Classes, Functions, etc.
 
 3. This Addon waits for the Assistant to prepare a complete reply before displaying the result.
    (Different from ChatGPT's word-by-word display method)
 
 ## Usage Suggestions
-1. When the Assistant's provided code includes non-existent or outdated Classes, Functions, it's recommended to directly copy and paste the function documentation from the Godot official website, and ask the Assistant to correct the example based on this documentation for better results.
+1. When the Assistant's provided code includes non-existent or outdated Classes, Functions, 
+   it's recommended to directly copy and paste the function documentation from the Godot official website, and 
+   ask the Assistant to correct the example based on this documentation for better results.
 
 2. It's suggested to decide whether to use this Addon after experiencing Github Copilot and ChatGPT Plus.
    Although Github Copilot has more features, as of now (2023/12/11), ChatGPT Plus is slightly superior in intelligence, especially in writing GDScript.

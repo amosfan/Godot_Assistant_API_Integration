@@ -1,5 +1,5 @@
 ## 專案總結
-這是一個 Godot 編輯器 addon (plugin), 可以讓你購過 OpenAI Assistant API 與 Assistant 溝通。
+這是一個 Godot 編輯器 addon (plugin), 可以讓你透過 OpenAI Assistant API 與 Assistant 溝通。
 
 ![image](addons/Godot_Assistant_API_Integration/assets/images/addon_preview.png)
 
